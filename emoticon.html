@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<title>Sticker Gallery</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="icon/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/emoticon.css" />
+	</head>
+
+	<body>
+		<div class="top">
+			<div class="top-l btn-back">
+				<i class="iconfont">&#xe648;</i>
+				<p>Me</p>
+			</div>
+			<div class="top-r">
+				<i class="iconfont">&#xe637;</i>
+			</div>
+			<div class="top-c">
+				<p>Top Picks</p>
+			</div>
+		</div>
+		<div id="nav">
+			<input type="text" class="search" placeholder="Search Stickers" />
+		</div>
+		<div id="banner">
+			<ul id="list">
+				<li><img src="img/banner-1.png" /></li>
+				<li><img src="img/banner-2.png" /></li>
+			</ul>
+		</div>
+		<div id="main">
+			<div class="main_top">
+				<p>Hot</p>
+			</div>
+			<div class="main_inner">
+				<div class="pic">
+					<img src="img/main-pic1.png" />
+					<p>Well-Behaved-Baby</p>
+					<p>Be a Well-Behaved-Baby</p>
+					<div class="btn">
+						<button>Get</button>
+					</div>
+				</div>
+				<div class="pic">
+					<img src="img/main-pic2.png" />
+					<p>斗图联盟4</p>
+					<p>斗图欢乐无限</p>
+					<div class="btn">
+						<button>Get</button>
+					</div>
+				</div>
+				<div class="pic">
+					<img src="img/main-pic3.png" />
+					<p>长草颜团子日常6</p>
+					<p>给你我的小团子</p>
+					<div class="btn">
+						<button>Get</button>
+					</div>
+				</div>
+				<div class="main_top">
+					<p>See also</p>
+				</div>
+				<div class="pic">
+					<img src="img/main-pic4.png" />
+					<p>乖巧宝宝4</p>
+					<p>乖巧宝宝3的续集</p>
+					<div class="btn">
+						<button>Get</button>
+					</div>
+				</div>
+				<div class="pic">
+					<img src="img/main-pic5.png" />
+					<p>欢乐兔8</p>
+					<p>兔兔兔兔的一天</p>
+					<div class="btn">
+						<button>Get</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<script src="js/back-active.js"></script>
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function Banner(){
+				this.iNow = 0;
+				this.Next = 0;
+				this.aLi = $("#list>li");
+				this.banner = $("#banner");
+				this.timer = null;
+				
+				this.init();
+			}
+			Banner.prototype = {
+				constructor:Banner,
+				init:function(){
+					this.autoPlay();
+					this.moseoverBanner();
+				},
+				moseoverBanner:function(){
+					var _this = this;
+					this.banner.on("mouseover",function(){
+						clearInterval(_this.timer)
+					})
+					
+					this.banner.on("mouseout",function(){
+						_this.autoPlay();
+					})
+					
+				},
+				autoPlay:function(){
+					var _this = this;
+					clearInterval(this.timer)
+					this.timer = setInterval(function(){
+						
+						if(_this.Next == _this.aLi.length-1){
+							_this.Next = 0;
+						}else{
+							_this.Next++;
+						}
+						
+						_this.toImg()
+					},3000)
+					
+				},
+				toImg:function(){
+					//第几个li的透明度为0
+					this.aLi.eq(this.iNow).stop(true).fadeTo(1000,0);
+					//第几个li的透明度为100
+					this.aLi.eq(this.Next).stop(true).fadeTo(1000,1);
+					
+					this.iNow = this.Next;
+				}
+			}
+			
+			new Banner()
+		</script>
+	</body>
+
+</html>

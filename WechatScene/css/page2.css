@@ -1,0 +1,32 @@
+.page2>img:nth-child(1) {
+	bottom: 0.33rem;
+	width: 26.66rem;
+	height: 30rem;
+}
+
+.page2>img:nth-child(2) {
+	bottom: 4.83rem;
+	left: 11.66rem;
+	width: 6.66rem;
+	height: 14.6rem;
+}
+.page2>img:nth-child(3) {
+	bottom: 22.5rem;
+	left: 19.66rem;
+	width: 2rem;
+	height: 2.33rem;
+	animation: flying 5s linear infinite;
+}
+.page2>p {
+	top: 6.8rem;
+	left: 3rem;
+}
+
+@keyframes flying{
+	0%{transform: rotate(-30deg);}
+	20%{transform: rotate(0deg);}
+	40%{transform: rotate(30deg);}
+	60%{transform: rotate(0deg);}
+	80%{transform: rotate(-30deg);}
+	100%{transform: rotate(-30deg);}
+}

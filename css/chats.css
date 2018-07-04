@@ -1,0 +1,26 @@
+.menu > ul > li:nth-child(1) { color: #1aad19; }
+
+.main {
+	overflow: hidden;
+	padding-left: 0.71rem;
+	margin-top: 4.57rem;
+	margin-bottom: 3.57rem;
+	width: 100%;
+	background: #fff;
+}
+.main .container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	border-top: 0.03rem solid  #d9d9d9;
+}
+.main .container:nth-last-child(1) { border-bottom: 0.03rem solid  #d9d9d9; }
+.main .container > * { float: left; }
+.main .container img { 
+	width: 4.28rem; 
+	padding: 0.71rem 0.71rem 0.71rem 0; 
+}
+.main .container dd {padding-top: 1.14rem;}
+.main .container p:nth-child(2) {color: #9b9b9b;}
+
+.main .container .container-right {position: absolute; top: 1.14rem; right: 0.71rem; font-size: 0.85rem; color: #9b9b9b;}

@@ -1,0 +1,36 @@
+.status-bar {
+	position: fixed;
+	overflow: hidden;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 1.42rem;
+	padding: 0.10rem 0.42rem 0 0.42rem;
+	color: #fff;
+	font-size: 0.37rem;
+	line-height: 1.42rem;
+	text-align: center;
+	z-index: 12;
+}
+.status-bar .status-l, .status-l > * { float: left; }
+.status-bar .status-r, .status-r > * { float: right; }
+.status-bar .status-c {position: relative;}
+.status-bar .status-c p{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.status-c p {transform: scale(.9);}
+.status-l p, .status-r p {transform: scale(.8);}
+.status-l i:nth-child(1) {transform: scale(.8);}
+.status-l p:nth-child(2) {margin-left: -0.36rem;}
+.status-l i:nth-child(3) {margin-left: -0.32rem; transform: scale(.8);}
+.status-r i:nth-child(1) {transform: scaleX(1.2);}
+.status-r i:nth-child(3) {margin-right: -0.22rem; transform: scale(.57)}
+.status-r i:nth-child(4) {margin-right: -0.22rem; transform: scale(.53)}
+.status-r i:nth-child(5) {margin-right: -0.22rem; transform: scale(.63)}
+.status-r i:nth-child(6) {margin-right: -0.22rem;}
+

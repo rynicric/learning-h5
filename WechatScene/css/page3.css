@@ -1,0 +1,30 @@
+.page3>img:nth-child(1){
+	bottom: 6.66rem;
+	left: 1.83rem;
+	width: 23rem;
+}
+.page3>img:nth-child(2){
+	bottom: 11rem;
+	left: 9.33rem;
+	width: 13.5rem;
+}
+.page3>img:nth-child(3){
+	bottom: 5.16rem;
+	left: 18.16rem;
+	width: 6rem;
+	animation: shaking 1s infinite linear;
+
+}
+.page3>p{
+	top: 6.8rem;
+	left: 2.83rem;
+	width: 4.83rem;
+}
+
+@keyframes shaking{
+	0%{transform: translateX(0px);}
+	25%{transform: translateX(-20px);}
+	50%{transform: translateX(0px);}
+	70%{transform: translateX(20px);}
+	100%{transform: translateX(0px);}
+}

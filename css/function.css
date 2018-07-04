@@ -1,0 +1,30 @@
+html, body {background: #efeff4;}
+
+.main {
+	overflow: hidden;
+	margin-top: 4.57rem;
+	margin-bottom: 3.57rem;
+	width: 100%;
+}
+.main .container-list {
+	margin-top: 1.42rem;
+	border-bottom: 0.03rem solid #d9d9d9;
+	border-top: 0.03rem solid #d9d9d9;
+	background: #fff;
+}
+.main .container-list:nth-child(1) {
+	margin-top: 1.07rem;
+}
+.main .container {
+	overflow: hidden;
+	width: 100%;
+	height:3.14rem;
+	border-bottom: 0.03rem solid #d9d9d9;
+	margin-left: 1.07rem;
+	padding-right: 1.07rem;
+	line-height: 3.14rem;
+}
+.main .container:nth-last-child(1) { border-bottom: 0;}
+.main .container > * { float: left;}
+.main .container p {padding-left: 1.21rem;}
+.main .container > i:nth-last-child(1) {float: right; padding-right: 1.07rem; color: #c7c7cc;}

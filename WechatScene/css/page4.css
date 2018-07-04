@@ -1,0 +1,29 @@
+.page4>img:nth-child(1){
+	bottom: 11.91rem;
+	left: 4.25rem;
+	width: 20.33rem;
+}
+.page4>img:nth-child(2){
+	bottom: 5.33rem;
+	left: 16.66rem;
+	width: 6.83rem;
+}
+.page4>img:nth-child(3){
+	bottom: 23.16rem;
+	left: 19.16rem;
+	width: 2.66rem;
+	animation: moving 1s infinite linear;
+}
+.page4>p{
+	top: 6.8rem;
+	left: 2.83rem;
+	width: 4.83rem;
+}
+
+@keyframes moving{
+	0%{transform: translateY(-15px);}
+	25%{transform: translateY(0px);}
+	50%{transform: translateY(15px);}
+	75%{transform: translateY(0px);}
+	100%{transform: translateY(-15px);}
+}

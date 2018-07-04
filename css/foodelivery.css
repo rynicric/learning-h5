@@ -1,0 +1,138 @@
+.top {
+	background: #fff;
+	color:#000
+}
+
+.main {
+	overflow: hidden;
+	margin-top: 4.57rem;
+	margin-bottom: 3.57rem;
+	width: 100%;
+}
+
+.main .search {
+	overflow: hidden;
+	width: 100%;
+	height: 3.33rem;
+	padding-left: 1.5rem;
+	padding-right: 0.83rem;
+	text-align: center;
+	line-height: 3.33rem;
+} 
+.main .search p {font-size: 1rem;}
+.main .search i {font-size: 1.4rem;}
+.main .search_l, .main .search_l > * {float: left;}
+.main .search_r, .main .search_r > * {float: right;}
+.main .search_l > i:nth-child(1) {padding-right: 0.5rem;}
+.main .search_r { position: relative;}
+.main .search_r input {
+	background: #efefef;
+	border: 0;
+	margin-top: 0.41rem;
+	padding-left: 2.4rem;
+	border-radius: 1.25rem;
+	height: 2.5rem;
+	width: 13.08rem;
+}
+.main .search_r > i {
+	position: absolute;
+	left: 0.83rem;
+}
+
+.main .nav {
+	overflow: hidden;
+	width: 100%;
+	padding-top: 1.25rem;
+	/*padding-bottom: 1.25rem;*/
+}
+.main .nav li {
+	float: left;
+	width: 20%;
+	height: 6.5rem;
+	text-align: center;
+}
+.main .nav img { width: 3.58rem;}
+
+.main .banner { 
+	width: 100%;
+	padding-top: 1.5rem;
+	padding-bottom: .4rem;
+}
+.main .banner img { 
+	width: 100%;
+}
+
+.main .cotent-title {
+	width: 100%;
+	line-height: 2.8rem;
+	height: 2.8rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+.main .content-nav {
+	overflow: hidden;
+	width: 100%;
+	border-top: 0.03rem solid #e4e4e4;
+	border-bottom: 0.03rem solid #e4e4e4;
+	/*height: 1.9rem;*/
+	/*line-height:1.9rem;*/
+	
+	text-align: center;
+}
+.main .content-nav > li {
+	margin-top: .6rem;
+	margin-bottom: .6rem;
+	float: left;
+	width: 25%;
+}
+.main .content-nav > li:nth-last-child(1) {border-left: 0.03rem solid #e4e4e4;}
+
+.main .content-tag {
+	overflow: hidden;
+	width: 100%;
+	/*border-top: 0.03rem solid #e4e4e4;*/
+	/*border-bottom: 0.03rem solid #e4e4e4;*/
+	/*height: 1.9rem;*/
+	/*line-height:1.9rem;*/
+	
+	text-align: center;
+}
+.main .content-tag > li {
+	float: left;
+	width: 25%;
+}
+
+.main .content-tag p {
+	/*margin-top: .6rem;*/
+	/*margin-bottom: .6rem;*/
+	font-size: 1rem;
+	margin-top: 0.83rem;
+	margin-bottom: 0.83rem;
+	margin-left: 0.8rem;
+	margin-right: 0.8rem;
+	border-radius: 0.33rem;
+	/*padding: 0.08rem 0.15rem;*/
+	line-height: 1.6rem;
+	background: #f8f8f8;
+	color: #686868;
+}
+
+.main .container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	/*border-top: 0.03rem solid  #d9d9d9;*/
+	/*background: #f8f8f8;*/
+	margin-bottom: 2rem;
+}
+/*.main .container:nth-last-child(1) { border-bottom: 0.03rem solid  #d9d9d9; }*/
+.main .container > * { float: left; }
+.main .container img { 
+	width: 4.28rem; 
+	padding: 0.71rem 0.71rem 0.71rem 0.71rem; 
+}
+.main .container dd {padding-top: .84rem;}
+.main .container p:nth-child(1) {font-weight: 700; }
+.main .container p:nth-child(2) {font-size: .6rem;color: #9b9b9b;}
+.main .container .container-right {position: absolute; top: 1.14rem; right: 0.71rem; font-size: 0.85rem; color: #9b9b9b;}

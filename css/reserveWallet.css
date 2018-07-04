@@ -1,0 +1,59 @@
+/* nav */
+.nav {
+	width: 100%;
+	margin-top: 4.57rem;
+	height: 9.78rem;
+	background: #686f78;
+	color: #fff;
+	
+}
+.nav li {
+	float: left;
+	margin-top: 2rem;
+	width: 33.3%;
+	text-align: center;
+}
+.nav li i { font-size: 2rem; }
+.nav li p { margin-top: 1.32rem; font-size: 1.14rem; }
+
+
+/* main */
+.main {
+	overflow: hidden;
+	width: 100%;
+	background: #efeff4;
+}
+.main .part{
+	overflow: hidden;
+	margin-top: 0.71rem;
+	background: #fff;
+	border-bottom: 0.03rem solid #ccc;
+	/*border-top: 0.71rem solid #efeff4;*/
+	/*height: 27.2rem;*/
+}
+.main .part > p {
+	padding-left: 0.92rem;
+	line-height: 3.53rem;
+	border-bottom: 0.03rem solid #ccc;
+}
+.main .part li {
+	float: left;
+	width: 33.3%;
+	height: 7.79rem;
+	padding-top: 1.78rem;
+	text-align: center;
+}
+.main .part li i { font-size: 2rem; }
+.main .part li p {
+	padding-top: 1.07rem;
+}
+.main .part li {
+	border-bottom: 0.03rem solid #ccc;
+	border-right: 0.03rem solid #ccc;
+}
+.main .part li:nth-child(3n) {border-left: 0;}
+.main .part:nth-child(1) li:nth-last-child(1) {border-bottom: 0;}
+.main .part:nth-child(2) li:nth-last-child(1) {border-bottom: 0;}
+.main .part:nth-child(3) li:nth-last-child(1) {border-bottom: 0;}
+.main .part:nth-child(3) li:nth-last-child(2) {border-bottom: 0;}
+

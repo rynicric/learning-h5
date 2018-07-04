@@ -1,0 +1,42 @@
+.page1 > img:nth-child(1) {
+	bottom: 3rem;
+	left: 15.7rem;
+	width: 7.83rem;
+	animation: trans 1s infinite linear;
+}
+.page1 > img:nth-child(2) {
+	bottom: 9.5rem;
+	left: 6.66rem;
+	width: 17.8rem;
+}
+.page1 > img:nth-child(3) {
+	bottom: 4.16rem;
+	left: 2.66rem;
+	width: 9.2rem;
+}
+.page1 > img:nth-child(4) {
+	bottom: 14.1rem;
+	left: 5.36rem;
+	width: 1.7rem;
+	animation: swing 1s infinite linear;
+}
+.page1 > p:nth-child(5) {
+	top: 6.8rem;
+	left: 6.36rem;
+	width: 1.7rem;
+}
+
+@keyframes trans{
+	0%{transform: translateX(0px);}
+	25%{transform: translateX(-20px);}
+	50%{transform: translateX(0px);}
+	75%{transform: translateX(20px);}
+	100%{transform: translateX(0px);}
+}
+@keyframes swing{
+	0%{transform: rotate(-10deg);}
+	25%{transform: rotate(0deg);}
+	50%{transform: rotate(10deg);}
+	75%{transform: rotate(0deg);}
+	100%{transform: rotate(-10deg);}
+}

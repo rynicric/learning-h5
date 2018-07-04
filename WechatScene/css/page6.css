@@ -1,0 +1,70 @@
+.page6 > img:nth-child(1) {
+	top: 20%;
+	left: 1.3rem;
+	width: 25.83rem;
+}
+.page6 > img:nth-child(2) {
+	bottom: 0;
+	width: 26.66rem;
+}
+.page6 > img:nth-last-child(1) {
+	bottom: -1.5rem;
+	left: 0.66rem;
+	width: 10.83rem;
+}
+.page6 > div {
+	left: 0;
+	right: 0;
+	top: 5rem;
+	bottom: 0;
+	margin: auto;
+	width: 22.5rem;
+	height: 36.16rem;
+	border-radius: 0.83rem;
+	background: rgba(255,255,255,.3);
+	box-shadow: 0px 0px 20px rgba(0,0,0,.4);
+}
+.page6 > div > * {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;	
+}
+.page6 > div > div:nth-child(1) {
+	top:1.33rem;
+	width: 12.5rem;
+	height: 2.66rem;
+	font-size: 1.66rem;
+	line-height: 2.66rem;
+	text-align: center;
+	color: #96766f;
+	border-radius: 1.33rem; 
+	border: 0.16rem solid #96766f;
+	background: #e8d8c9;
+}
+.page6 > div > div:nth-child(2) {
+	top:4.66rem;
+	overflow: hidden;
+	position: absolute;
+	height: 18.66rem;
+	width: 20.33rem;
+	border: 0.08rem solid #8d6f61;
+}
+.page6 > div #container {
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 17.66rem;
+	width: 19.33rem;
+}
+.page6 > div > p:nth-last-child(1), 
+.page6 > div > p:nth-last-child(2) {
+	position: absolute;
+	font-size: 1.2rem;
+	line-height: 1.3rem;
+}
+.page6 > div > p:nth-last-child(1) {display: block; width: 21rem; bottom: 8.6rem;}
+.page6 > div > p:nth-last-child(2) {display: block; width: 21rem; bottom: 10.5rem;}
